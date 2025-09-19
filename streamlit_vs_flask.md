@@ -177,55 +177,83 @@ flowchart TD
 ### When to Use Streamlit
 
 ```mermaid
-mindmap
-    root((Streamlit))
-        Data Science
-            Machine Learning Demos
-            Data Exploration
-            Statistical Analysis
-            Model Visualization
-        Prototyping
-            Rapid MVPs
-            POC Development
-            Internal Tools
-            Quick Demos
-        Analytics
-            Dashboards
-            Reports
-            Monitoring Tools
-            KPI Tracking
-        Team Profile
-            Data Scientists
-            Analysts
-            Researchers
-            Non-Web Developers
+graph TD
+    subgraph StreamlitUseCases[When to Use Streamlit]
+        subgraph DataScience[Data Science Applications]
+            DS1[Machine Learning Demos]
+            DS2[Data Exploration Tools]
+            DS3[Statistical Analysis]
+            DS4[Model Visualization]
+        end
+
+        subgraph Prototyping[Rapid Prototyping]
+            PR1[Quick MVPs]
+            PR2[POC Development]
+            PR3[Internal Tools]
+            PR4[Demo Applications]
+        end
+
+        subgraph Analytics[Analytics & Reporting]
+            AN1[Interactive Dashboards]
+            AN2[Business Reports]
+            AN3[Monitoring Tools]
+            AN4[KPI Tracking]
+        end
+
+        subgraph TeamProfile[Ideal Team Profile]
+            TP1[Data Scientists]
+            TP2[Business Analysts]
+            TP3[Researchers]
+            TP4[Non-Web Developers]
+        end
+    end
+
+    style StreamlitUseCases fill:#e3f2fd
+    style DataScience fill:#bbdefb
+    style Prototyping fill:#90caf9
+    style Analytics fill:#64b5f6
+    style TeamProfile fill:#42a5f5
 ```
 
 ### When to Use Flask + Frontend
 
 ```mermaid
-mindmap
-    root((Flask + Frontend))
-        Production Apps
-            E-commerce
-            SaaS Platforms
-            Enterprise Software
-            Multi-tenant Apps
-        Complex UX
-            Custom Workflows
-            Advanced Interactions
-            Mobile Responsive
-            PWA Requirements
-        Scale Requirements
-            High Traffic
-            Microservices
-            API-First Design
-            Global Distribution
-        Team Profile
-            Full-Stack Devs
-            Frontend Specialists
-            DevOps Engineers
-            Large Teams
+graph TD
+    subgraph FlaskUseCases[When to Use Flask + Frontend]
+        subgraph ProductionApps[Production Applications]
+            PA1[E-commerce Platforms]
+            PA2[SaaS Products]
+            PA3[Enterprise Software]
+            PA4[Multi-tenant Systems]
+        end
+
+        subgraph ComplexUX[Complex User Experience]
+            UX1[Custom Workflows]
+            UX2[Advanced Interactions]
+            UX3[Mobile Responsive]
+            UX4[PWA Requirements]
+        end
+
+        subgraph ScaleReq[Scale Requirements]
+            SC1[High Traffic Apps]
+            SC2[Microservices]
+            SC3[API-First Design]
+            SC4[Global Distribution]
+        end
+
+        subgraph TeamProfile2[Ideal Team Profile]
+            TP5[Full-Stack Developers]
+            TP6[Frontend Specialists]
+            TP7[DevOps Engineers]
+            TP8[Large Dev Teams]
+        end
+    end
+
+    style FlaskUseCases fill:#fff8e1
+    style ProductionApps fill:#ffecb3
+    style ComplexUX fill:#ffe082
+    style ScaleReq fill:#ffd54f
+    style TeamProfile2 fill:#ffca28
 ```
 
 ## Performance & Scalability
